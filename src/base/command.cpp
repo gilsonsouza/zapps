@@ -19,6 +19,7 @@
 #include "logstats.h"
 #include "logpagestats.h"
 #include "dbinspect.h"
+#include "loghistogram.h"
 #include "experiments/restore_cmd.h"
 
 /*
@@ -55,6 +56,8 @@ void Command::init()
     REGISTER_COMMAND("logstats", LogStats);
     REGISTER_COMMAND("logpagestats", LogPageStats);
     REGISTER_COMMAND("dbinspect", DBInspect);
+    REGISTER_COMMAND("loghistogram", LogHistogram);
+    //REGISTER_COMMAND("mrestore", MergeRestore);
     REGISTER_COMMAND("kits", KitsCommand);
     REGISTER_COMMAND("restore", RestoreCmd);
 }

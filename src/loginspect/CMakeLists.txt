@@ -5,6 +5,7 @@ set(loginspect_SRCS
     ${CMAKE_CURRENT_SOURCE_DIR}/logstats.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/logpagestats.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/dbinspect.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/loghistogram.cpp
     )
 
 add_library (loginspect ${loginspect_SRCS})
