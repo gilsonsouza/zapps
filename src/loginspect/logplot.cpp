@@ -17,7 +17,7 @@ LogPlotHandler::LogPlotHandler()
 void LogPlotHandler::invoke(logrec_t &r) 
 {
         uint4_t pid = r.construct_pid().page;
-        if (r.type() == logrec_t::t_page_read) 
+        if (r.type() == logrec_t::t_fix_page_read) 
             cout << reqNumber_ << " R " << pid << endl;
         else
             cout << reqNumber_ << " U " << pid << endl;
